@@ -1,5 +1,10 @@
 /*
-    Author: Joan Bono <@joan_bono>
+    Description: This finds the magics on dump files, like raw dd image.
+    Disclaimer: This can though false positives.
+
+    Contributors:
+      - Jaume Martin <@Xumeiquer>
+      - Joan Bono <@joan_bono>
 */
 
 rule png_magic: PNG

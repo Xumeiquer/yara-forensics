@@ -1,7 +1,10 @@
 /*
-    Author: Jaume Martin && Joan Bono
-    Date: 26/04/2017
-    Description: This finds the magics on dump files, like raw dd image. This can though false positives.
+    Description: This finds the magics on dump files, like raw dd image.
+    Disclaimer: This can though false positives.
+
+    Contributors:
+      - Jaume Martin <@Xumeiquer>
+      - Joan Bono <@joan_bono>
 */
 
 rule contains_doc: DOC

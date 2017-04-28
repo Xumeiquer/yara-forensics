@@ -1,6 +1,11 @@
 /*
-    Author: Joan Bono <@joan_bono>
+    Description: This finds the magics on individual files.
+    Disclaimer: This can though false positives.
+
+    Contributors:
+      - Joan Bono <@joan_bono>
 */
+
 
 rule png_magic: PNG
 {
