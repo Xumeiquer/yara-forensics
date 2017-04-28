@@ -84,3 +84,15 @@ contains_jpeg /home/xumeiquer/kvm/ISOs/Windows 7 64Bits SP1.iso
 
 13,26s user 0,97s system 45% cpu 30,982 total
 ```
+
+```
+$> ls -lh mem.raw
+-rwxr-xr-x  1 root  staff    18G 29 abr 00:18 mem.raw
+
+$> time yara  raw/jpeg.yar mem.raw
+contains_jpeg mem.raw
+contains_jpg_with_EXIF mem.raw
+contains_jpeg_2000 mem.raw
+
+44,60s user 12,84s system 57% cpu 1:39,83 total
+```
