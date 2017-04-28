@@ -1,5 +1,5 @@
 /*
-    Author: Jaume Martin
+    Author: Jaume Martin && Joan Bono
     Date: 24/04/2017
     Description: This finds the magics on individual files.
 */
