@@ -1,7 +1,9 @@
 /*
-    Author: Jaume Martin
-    Date: 26/04/2017
-    Description: This finds the magics on dump files, like raw dd image. This can though false positives.
+    Description: This finds the magics on dump files, like raw dd image.
+    Disclaimer: This can though false positives.
+
+    Contributors:
+      - Jaume Martin <@Xumeiquer>
 */
 
 rule contains_vcard: vCard

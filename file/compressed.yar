@@ -1,7 +1,9 @@
 /*
-    Author: Jaume Martin
-    Date: 24/04/2017
     Description: This finds the magics on individual files.
+    Disclaimer: This can though false positives.
+
+    Contributors:
+      - Jaume Martin <@Xumeiquer>
 */
 
 rule _7z_magic: _7z

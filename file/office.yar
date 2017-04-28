@@ -1,7 +1,10 @@
 /*
-    Author: Jaume Martin && Joan Bono
-    Date: 24/04/2017
     Description: This finds the magics on individual files.
+    Disclaimer: This can though false positives.
+
+    Contributors:
+      - Jaume Martin <@Xumeiquer>
+      - Joan Bono <@joan_bono>
 */
 
 rule doc_magic: DOC
