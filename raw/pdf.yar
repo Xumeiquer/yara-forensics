@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule contains_pdf: PDF
+rule pdf: PDF
 {
     meta:
         author = "Jaume Martin"

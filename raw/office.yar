@@ -7,7 +7,7 @@
       - Joan Bono <@joan_bono>
 */
 
-rule contains_doc: DOC
+rule doc: DOC
 {
     meta:
         author = "Jaume Martin"
@@ -19,7 +19,7 @@ rule contains_doc: DOC
        $a
 }
 
-rule excel_2007_magic: XLSX
+rule excel_2007: XLSX
 {
     meta:
         author = "Joan Bono"
@@ -31,7 +31,7 @@ rule excel_2007_magic: XLSX
        $a
 }
 
-rule excel_2003_magic: XLS
+rule excel_2003: XLS
 {
     meta:
         author = "Joan Bono"
@@ -43,7 +43,7 @@ rule excel_2003_magic: XLS
        $a
 }
 
-rule excel_XML_magic: XLS
+rule excel_XML: XLS
 {
     meta:
         author = "Joan Bono"
@@ -55,7 +55,7 @@ rule excel_XML_magic: XLS
        $a
 }
 
-rule excel_OS2worksheet_magic: XLS
+rule excel_OS2worksheet: XLS
 {
     meta:
         author = "Joan Bono"
@@ -67,7 +67,7 @@ rule excel_OS2worksheet_magic: XLS
        $a
 }
 
-rule excel_OrthoTrack_magic: XLS
+rule excel_OrthoTrack: XLS
 {
     meta:
         author = "Joan Bono"

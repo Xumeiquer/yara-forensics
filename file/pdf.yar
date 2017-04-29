@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule pdf_magic: PDF
+rule pdf: PDF
 {
     meta:
         author = "Jaume Martin"

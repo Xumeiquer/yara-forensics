@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule contains_jpeg: JFIF JPE JPEG JPG
+rule jpeg: JFIF JPE JPEG JPG
 {
     meta:
         author = "Jaume Martin"
@@ -19,7 +19,7 @@ rule contains_jpeg: JFIF JPE JPEG JPG
 }
 
 
-rule contains_jpg_with_EXIF: JPG
+rule jpg_with_EXIF: JPG
 {
     meta:
         author = "Jaume Martin"
@@ -31,7 +31,7 @@ rule contains_jpg_with_EXIF: JPG
        $a
 }
 
-rule contains_jpeg_like_Canon_EOS: JPEG
+rule jpeg_like_Canon_EOS: JPEG
 {
     meta:
         author = "Jaume Martin"
@@ -43,7 +43,7 @@ rule contains_jpeg_like_Canon_EOS: JPEG
        $a
 }
 
-rule contains_jpeg_like_Samsung_D500: JPEG
+rule jpeg_like_Samsung_D500: JPEG
 {
     meta:
         author = "Jaume Martin"
@@ -55,7 +55,7 @@ rule contains_jpeg_like_Samsung_D500: JPEG
        $a
 }
 
-rule contains_jpg_with_SPIFF: JPG
+rule jpg_with_SPIFF: JPG
 {
     meta:
         author = "Jaume Martin"
@@ -67,7 +67,7 @@ rule contains_jpg_with_SPIFF: JPG
        $a
 }
 
-rule contains_jpeg_2000: JPEG2000
+rule jpeg_2000: JPEG2000
 {
     meta:
         author = "Jaume Martin"

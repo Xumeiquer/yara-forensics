@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule contains_videocd: VCD
+rule videocd: VCD
 {
     meta:
         author = "Jaume Martin"
@@ -18,7 +18,7 @@ rule contains_videocd: VCD
        $a
 }
 
-rule contains_ogg: OGG
+rule ogg: OGG
 {
     meta:
         author = "Jaume Martin"

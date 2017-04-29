@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule vcard_magic: vCard
+rule vcard: vCard
 {
     meta:
         author = "Jaume Martin"
