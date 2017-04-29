@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule jpeg_magic: JFIF JPE JPEG JPG
+rule jpeg: JFIF JPE JPEG JPG
 {
     meta:
         author = "Jaume Martin"
@@ -18,7 +18,7 @@ rule jpeg_magic: JFIF JPE JPEG JPG
        $a at 0
 }
 
-rule jpg_magic_with_EXIF: JPG
+rule jpg_with_EXIF: JPG
 {
     meta:
         author = "Jaume Martin"
@@ -30,7 +30,7 @@ rule jpg_magic_with_EXIF: JPG
        $a at 0
 }
 
-rule jpeg_magic_with_Canon_EOS: JPEG
+rule jpeg_with_Canon_EOS: JPEG
 {
     meta:
         author = "Jaume Martin"
@@ -43,7 +43,7 @@ rule jpeg_magic_with_Canon_EOS: JPEG
 }
 
 
-rule jpeg_magic_with_Samsung_D500: JPEG
+rule jpeg_with_Samsung_D500: JPEG
 {
     meta:
         author = "Jaume Martin"
@@ -55,7 +55,7 @@ rule jpeg_magic_with_Samsung_D500: JPEG
        $a at 0
 }
 
-rule jpg_magic_with_SPIFF: JPG
+rule jpg_with_SPIFF: JPG
 {
     meta:
         author = "Jaume Martin"
@@ -67,7 +67,7 @@ rule jpg_magic_with_SPIFF: JPG
        $a at 0
 }
 
-rule jpeg_magic_2000: JPEG2000
+rule jpeg_2000: JPEG2000
 {
     meta:
         author = "Jaume Martin"

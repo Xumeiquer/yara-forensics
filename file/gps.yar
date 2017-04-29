@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule gps_magic: GPS GPX
+rule gps: GPS GPX
 {
     meta:
         author = "Jaume Martin"

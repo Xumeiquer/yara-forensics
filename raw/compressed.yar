@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule contains_7z: _7z
+rule _7z: _7z
 {
     meta:
         author = "Jaume Martin"

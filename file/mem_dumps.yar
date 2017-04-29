@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule win_64_mem_dump_magic: DMP
+rule win_64_mem_dump: DMP
 {
     meta:
         author = "Jaume Martin"
@@ -19,7 +19,7 @@ rule win_64_mem_dump_magic: DMP
        $a at 0
 }
 
-rule win_32_mem_dump_magic: DMP
+rule win_32_mem_dump: DMP
 {
     meta:
         author = "Jaume Martin"

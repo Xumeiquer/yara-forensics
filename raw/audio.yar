@@ -6,7 +6,7 @@
       - Jaume Martin <@Xumeiquer>
 */
 
-rule contains_ogg: OGG
+rule ogg: OGG
 {
     meta:
         author = "Jaume Martin"
