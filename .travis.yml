@@ -13,5 +13,5 @@ before_install:
 script:
     - echo "test" > testfile
     - FAIL=0
-    - for i in $(ls -d */); do for j in $(find -E $i -type f -regex ".*\.yara?"); do echo $j; yara $j testfile; if [[ $? -ne 0 ]]; then FAIL=1; fi; done; done
+    - for i in $(ls -d */); do for j in $(find $i -type f -regex ".*\.yara?"); do echo $j; yara $j testfile; if [[ $? -ne 0 ]]; then FAIL=1; fi; done; done
     - exit e
