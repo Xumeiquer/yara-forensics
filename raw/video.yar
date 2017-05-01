@@ -4,6 +4,7 @@
 
     Contributors:
       - Jaume Martin <@Xumeiquer>
+      - Joan Bono <@joan_bono>
 */
 
 rule videocd: VCD
@@ -26,6 +27,42 @@ rule ogg: OGG
 
     strings:
         $a = {4F 67 67 53 00 02 00 00 00 00 00 00 00 00}
+
+    condition:
+       $a
+}
+
+rule avi: AVI
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 52 49 46 46 }
+
+    condition:
+       $a
+}
+
+rule mkv: MKV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 1A 45 DF A3 }
+
+    condition:
+       $a
+}
+
+rule flv: FLV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 46 4C 56 01 }
 
     condition:
        $a
