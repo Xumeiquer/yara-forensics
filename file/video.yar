@@ -68,3 +68,87 @@ rule flv: FLV
        $a at 0
 }
 
+rule wmv: WMV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 30 26 B2 75 8E 66 CF 11 A6 D9 00 AA 00 62 CE 6C }
+
+    condition:
+       $a at 0
+}
+
+rule mpg2: MPG
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 00 00 01 BA 44 }
+
+    condition:
+       $a at 0
+}
+
+rule mpg4: MP4
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 00 00 00 14 66 74 79 70 69 73 6F 6D 00 00 00 01 }
+
+    condition:
+       $a at 0
+}
+
+rule mov: MOV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 4B 41 4D 76 }
+
+    condition:
+       $a at 0
+}
+
+rule real_media_stream: RM
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 2E 52 4D 46 00 00 00 12 00 }
+
+    condition:
+       $a at 0
+}
+
+rule raw_h264: H264
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 00 00 00 01 67 64 00 1F AC 34 E2 40 B4 11 7E E1 }
+
+    condition:
+       $a at 0
+}
+
+rule magic_lantern_video: MLV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 4D 4C 56 49 }
+
+    condition:
+       $a at 0
+}
+
