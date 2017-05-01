@@ -1,15 +1,15 @@
 language: c
 sudo: required
 before_install:
-    - wget https://github.com/VirusTotal/yara/archive/v3.5.0.tar.gz -O yara.tar.gz
-    - tar -xzvf yara.tar.gz
+    - wget https://github.com/VirusTotal/yara/archive/v3.5.0.tar.gz -O ../yara.tar.gz
+    - tar -xzvf ../yara.tar.gz
     - cd ../yara-3.5.0
     - ./bootstrap.sh
     - ./configure --enable-cuckoo
     - make
     - sudo make install
     - sudo ldconfig
-    - cd ../
+    - cd -
 script:
     - echo "test" > testfile
     - FAIL=0
