@@ -128,6 +128,18 @@ rule real_media_stream: RM
        $a at 0
 }
 
+rule real_media_variable_bitrate: RMVB
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 2E 52 4D 46 }
+
+    condition:
+       $a at 0
+}
+
 rule raw_h264: H264
 {
     meta:
@@ -151,4 +163,114 @@ rule magic_lantern_video: MLV
     condition:
        $a at 0
 }
+
+rule webm: WEBM
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 1A 45 DF A3 }
+
+    condition:
+       $a at 0
+}
+
+rule vob: VOB
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { FF FF FF 5D 00 00 00 02 00 01 00 00 00 FC FF 35 }
+
+    condition:
+       $a at 0
+}
+
+rule dirac: DRC
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 42 42 43 44 }
+
+    condition:
+       $a at 0
+}
+
+
+rule gif_animated: GIF
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 47 49 46 38 39 61 }
+
+    condition:
+       $a at 0
+}
+
+rule anime_music_video: AMV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 52 49 46 46 }
+
+    condition:
+       $a at 0
+}
+
+rule material_exchange_music: MXF
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 06 0E 2B 34 02 05 01 01 0D 01 02 01 01 02 }
+
+    condition:
+       $a at 0
+}
+
+rule picasa_material_exchange_music: MXF
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 3C 43 54 72 61 6E 73 54 69 6D 65 6C 69 6E 65 3E }
+
+    condition:
+       $a at 0
+}
+
+rule id_software_game_video: ROQ
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 84 10 FF FF FF FF 1E 00 }
+
+    condition:
+       $a at 0
+}
+
+rule nullsoft_streaming_video: NSV
+{
+    meta:
+        author = "Joan Bono"
+
+    strings:
+        $a = { 4E 53 56 }
+
+    condition:
+       $a at 0
+}
+
 
