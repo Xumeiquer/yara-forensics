@@ -5,7 +5,7 @@ before_install:
     - tar -xzvf ../yara.tar.gz -C ..
     - cd ../yara-3.5.0
     - ./bootstrap.sh
-    - ./configure --enable-cuckoo
+    - ./configure
     - make
     - sudo make install
     - sudo ldconfig
