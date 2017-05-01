@@ -1,0 +1,17 @@
+language: c
+sudo: required
+before_install:
+    - wget https://github.com/VirusTotal/yara/archive/v3.5.0.tar.gz -O ../yara.tar.gz
+    - tar -xzvf ../yara.tar.gz -C ..
+    - cd ../yara-3.5.0
+    - ./bootstrap.sh
+    - ./configure
+    - make
+    - sudo make install
+    - sudo ldconfig
+    - cd -
+script:
+    - echo "test" > testfile
+    - FAIL=0
+    - for i in $(ls -d */); do for j in $(find $i -type f -regex ".*\.yara?"); do echo $j; yara $j testfile; if [[ $? -ne 0 ]]; then FAIL=1; fi; done; done
+    - exit $FAIL
