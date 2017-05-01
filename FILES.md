@@ -63,3 +63,10 @@
 + AVI.
 + MKV.
 + FLV.
++ WMV.
++ MPG.
++ MP4.
++ MOV.
++ RM.
++ H264.
++ MLV.
