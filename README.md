@@ -3,21 +3,29 @@ YARA-FORENSICS
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0) [![DFIR: Yara rules](https://img.shields.io/badge/DFIR-Yara%20Rules-brightgreen.svg)](https://yararules.com)
 
-Yara is the pattern matching swiss knife for malware researchers (and everyone else). Basically Yara allow us to scan files based on textual or binary patterns, thus we can take advantage of yara's potential and focus it in forensic investigations.
+`Yara` is the pattern matching swiss knife for malware researchers (and everyone else). Basically `Yara` allow us to scan files based on textual or binary patterns, thus we can take advantage of `Yara`'s potential and focus it in forensic investigations.
 
-For now I have created a set of rules that search for magic headers on files and dump files like raw image of dd as well so I invite anyone to add or improve rules regarding forensic stuff.
+For now I have created a set of rules that search for magic headers on files and dump files like raw image of `dd` as well. So I invite anyone to add or improve rules regarding forensics stuff.
+
+***
 
 ## Content
 
-The repo is splited up in two folders, file and raw. The rules in file folder are mainly to look for magic in standalone files, on the other hand, rules inside raw folder are mainly to look for magic in raw file or dump files. The main difference is the offset of the magic usually at 0x0 in files.
+The repository is splitted in two folders: `file` and `raw`. The rules in `file` folder are mainly to look for `magic` in standalone files, on the other hand, rules inside `raw` folder are mainly to look for `magic` in raw file or dump files. The main difference is the offset of the magic usually at `0x0` in files.
+
+The avaliable files are listed in [`FILES.md`](FILES.md).
+
+***
 
 ## Yara installation
 
-Installing Yara is quite easy just follow [the official documentation](http://yara.readthedocs.io/en/v3.5.0/gettingstarted.html), after that, you can use the rules of this repo (and yara rules in general).
+Installing `Yara` is quite easy: just follow [the official documentation](http://yara.readthedocs.io/en/v3.5.0/gettingstarted.html), after that, you can use the rules of this repository (and all `Yara` rules in general).
+
+***
 
 ## Examples
 
-### The basic use of yara rules
+### The basic use of `Yara` rules
 
 This will tell whether the file `Hard_Drive.jpg` is an image.
 
@@ -25,6 +33,7 @@ This will tell whether the file `Hard_Drive.jpg` is an image.
 $> yara file/images.yar test/Hard_Drive.jpg
 jpg_magic_with_EXIF test/Hard_Drive.jpg
 ```
+
 Or scanning images in dump files.
 
 ```
@@ -32,12 +41,14 @@ $> yara raw/images.yar ~/kvm/ISOs/debian-8.4.0-amd64-netinst.iso
 contains_jpeg /home/xumeiquer/kvm/ISOs/debian-8.4.0-amd64-netinst.iso
 ```
 
-### Yara options
-Yara offers a good set of options that can be useful, as example I will show two interesting options, but there are more.
+### `Yara` options
+
+`Yara` offers a good set of options that can be useful, as example I will show two interesting options, but there are more.
 
 For example:
 
 #### Offest
+
 ```
 $> yara -s file/images.yar test/Hard_Drive.jpg
 jpg_magic_with_EXIF test/Hard_Drive.jpg
@@ -55,6 +66,7 @@ contains_jpeg /home/xumeiquer/kvm/ISOs/debian-8.4.0-amd64-netinst.iso
 ```
 
 #### Tags
+
 It is also possible to get he rule `tags`. This will be useful when executing a bunch of rule and then filter by some possible tag.
 
 ```
@@ -64,7 +76,7 @@ jpg_magic_with_EXIF [JPG] test/Hard_Drive.jpg
 
 ### Benchmarks
 
-Well, there are no actual benchmarks, but I would like to show how fast is Yara.
+Well, there are no actual benchmarks, but I would like to show how fast is `Yara`.
 
 ```
 $> ls -lh ~/kvm/ISOs/debian-8.4.0-amd64-netinst.iso
