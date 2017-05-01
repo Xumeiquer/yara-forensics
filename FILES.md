@@ -68,5 +68,21 @@
 + MP4.
 + MOV.
 + RM.
++ RMVB.
 + H264.
 + MLV.
++ WEBM.
++ VOB.
++ DRC.
++ GIF.
++ AMV.
++ MXF.
++ Picasa MXF.
++ ROQ.
++ NSV.
+
+## GIF
+
++ GIF.
++ GIF87a.
++ GIF89a.
