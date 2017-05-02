@@ -277,7 +277,7 @@ rule dwg: DWG
         $n = {41 43 31 30 31 33} /* AutoCAD R13 */
 
     condition:
-       1 of ($*) at 0
+       any of them at 0
 }
 
 rule dxf: DXF
@@ -358,7 +358,7 @@ rule obg: OBJ
         $d = {23 20 42 6C 65 6E 64 65 72} /* Blender 3D */
 
     condition:
-       1 of ($*) at 0
+       any of them at 0
 }
 
 rule prc: PRC
@@ -406,7 +406,7 @@ rule stl: STL
         $j = {73 6F 6C 69 64 20} /* STereo Lithography ASCII */
 
     condition:
-       1 of ($*) at 0
+       any of them at 0
 }
 
 rule u3d: U3D
@@ -472,7 +472,7 @@ rule 3dm: 3DM
         $b = {33 44 20 47 65 6F 6D 65 74 72 79 20 46 69 6C 65} /* Rhinoceros 3D Model */
 
     condition:
-       $a at 0
+       $a at 0 or $b at 0
 }
 
 rule 3dxml: 3DXML

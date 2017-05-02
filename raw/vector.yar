@@ -472,7 +472,7 @@ rule 3dm: 3DM
         $b = {33 44 20 47 65 6F 6D 65 74 72 79 20 46 69 6C 65} /* Rhinoceros 3D Model */
 
     condition:
-       $a
+       $a or $b
 }
 
 rule 3dxml: 3DXML
