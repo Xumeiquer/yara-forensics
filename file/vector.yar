@@ -186,7 +186,7 @@ rule wmf: WMF
         $b = {D7 CD C6 9A 00 00}
 
     condition:
-       ($a or $b) at 0
+       $a at 0 or $b at 0
 }
 
 rule xar: XAR
@@ -448,7 +448,7 @@ rule x3d: X3D
        $a at 0
 }
 
-rule 3d: 3D
+rule vector_3d: 3D
 {
     meta:
         author = "Joan Bono"
