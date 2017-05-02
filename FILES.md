@@ -3,6 +3,28 @@
 ## Audio
 
 + OGG.
++ AAC.
++ AU.
++ AAX.
++ ACT.
++ AIFF.
++ AMR.
++ APE.
++ AWB.
++ DSS.
++ DVF.
++ FLAC.
++ GSM.
++ M4A.
++ MMF.
++ MP3.
++ MPC.
++ MSV.
++ OPUS.
++ RA.
++ RAW.
++ TTA.
++ VOX.
       
 ## Compressed Files 
 
