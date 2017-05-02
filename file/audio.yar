@@ -291,7 +291,7 @@ rule mp3_gogo_encoded: MP3
         $b = {49 44 33 }
 
     condition:
-       ($a or $b) at 0
+       $a at 0 or $b at 0
 }
 
 rule mp3_hd: MP3
@@ -383,7 +383,7 @@ rule ra: RA
         $b = {2E 52 4D 46 00 00 00 12 00}
 
     condition:
-       ($a or $b) at 0
+       $a at 0 or $b at 0
 }
 
 rule raw: RAW
@@ -433,19 +433,6 @@ rule vox_voxware: VOX
 
     strings:
         $a = {52 49 46 46}
-
-    condition:
-       $a at 0
-}
-
-rule vox_magica_voxel: VOX
-{
-    meta:
-        author = "Rafa Bono"
-        file_info = " VoxWare MetaVoice encoded audio"
-
-    strings:
-        $a = {}
 
     condition:
        $a at 0
