@@ -110,7 +110,7 @@ rule odg: ODG
        $a at 0
 }
 
-rule pov-ray: POV-RAY
+rule povray: POVRAY
 {
     meta:
         author = "Joan Bono"
