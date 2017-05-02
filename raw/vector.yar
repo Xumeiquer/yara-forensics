@@ -461,7 +461,7 @@ rule vector3d: Vector3D
        $a
 }
 
-rule 3dm: 3DM
+rule 3dm: _3DM
 {
     meta:
         author = "Joan Bono"
