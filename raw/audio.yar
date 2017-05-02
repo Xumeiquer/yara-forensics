@@ -437,16 +437,3 @@ rule vox_voxware: VOX
     condition:
        $a
 }
-
-rule vox_magica_voxel: VOX
-{
-    meta:
-        author = "Rafa Bono"
-        file_info = " VoxWare MetaVoice encoded audio"
-
-    strings:
-        $a = {}
-
-    condition:
-       $a
-}
