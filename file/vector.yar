@@ -461,7 +461,7 @@ rule vector3d: Vector3D
        $a at 0
 }
 
-rule 3dm: _3DM
+rule _3dm: _3DM
 {
     meta:
         author = "Joan Bono"
@@ -475,7 +475,7 @@ rule 3dm: _3DM
        $a at 0 or $b at 0
 }
 
-rule 3dxml: 3DXML
+rule _3dxml: _3DXML
 {
     meta:
         author = "Joan Bono"
@@ -488,7 +488,7 @@ rule 3dxml: 3DXML
        $a at 0
 }
 
-rule 3dxml_compressed: 3DXML
+rule _3dxml_compressed: _3DXML
 {
     meta:
         author = "Joan Bono"
