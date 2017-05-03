@@ -7,8 +7,6 @@ FAIL=0
 
 if [ $OS == "Darwin" ]; then
 	OPT="-E"
-else
-	OPT=""
 fi
 
 for i in $(ls -d */); do
