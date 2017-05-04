@@ -17,6 +17,12 @@ The avaliable files are listed in [`FILES.md`](FILES.md).
 
 ***
 
+## Contribution
+
+We have defined a short document describing how to contribute to Yara-Forensics, please before sharing your rules we encorage you to read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
+***
+
 ## Yara installation
 
 Installing `Yara` is quite easy: just follow [the official documentation](http://yara.readthedocs.io/en/v3.5.0/gettingstarted.html), after that, you can use the rules of this repository (and all `Yara` rules in general).
