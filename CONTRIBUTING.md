@@ -110,14 +110,14 @@ You can fork Yara-forensics on your Github profile and write your rules in there
 Other way to do a pull request is doing it from your computer. You will have to follow these steps:
 
 1. Clone Yara-forensics on you computer.
-1. Checkout to the `devel` branch.
-1. Write write your rules.
+1. Write your rules.
 1. Run `runTest.sh`
-1. Pull new content from remote.
-1. Commit changes.
-1. Push new content to the `devel` branch.
+1. Commit changes on your repository.
+1. Push new content to your repository as well.
+1. Generate a pull request from your repository to yara-forensics repository.
+  1. Remember, you have to generate the pull request to the `devel` branch un yara-forensics
 
-The pull request will show up on Github automatically and Travis CI will be triggered as well. If everything is OK your pull request will be ready to be merged.
+When you get at this point Travis CI will trigger a build to check whether rules are Yara complaint. If everything goes well your pull request will be ready to be merged.
 
 NOTE: _In terms to run `runTest.sh` you have to have Yara installed in your system._
 
