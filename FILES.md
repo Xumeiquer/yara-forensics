@@ -1,5 +1,23 @@
 # Available Files
 
+## Table of Contents
+
+* [Audio](#audio)
+* [Compressed Files](#compressed-files)
+* [GIF](#gif)
+* [GPS Files](#gps-files)
+* [JPEG Images](#jpeg-images)
+* [Memory Dumps](#memory-dumps)
+* [Office](#office)
+* [PDF](#pdf)
+* [PNG Images](#png-images)
+* [Skype](#skype)
+* [SQLite](#sqlite)
+* [vCard](#vcard)
+* [Vector](#vector)
+* [Video](#video)
+* [Windows Registry](#windows-registry)
+
 ## Audio
 
 + OGG.
@@ -25,12 +43,12 @@
 + RAW.
 + TTA.
 + VOX.
-      
-## Compressed Files 
+
+## Compressed Files
 
 + 7z.
 
-### GPS Files        
+### GPS Files
 
 + GPX.
 
@@ -78,7 +96,7 @@
 
 + vCard.
 
-## Video      
+## Video
 
 + VCD.
 + OGG.
@@ -97,6 +115,12 @@
 + VOB.
 + DRC.
 + GIF.
+
+
+## Windows Registry
+
++ REG.
++ SUD.
 + AMV.
 + MXF.
 + Picasa MXF.
