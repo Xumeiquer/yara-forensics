@@ -115,17 +115,16 @@
 + VOB.
 + DRC.
 + GIF.
-
-
-## Windows Registry
-
-+ REG.
-+ SUD.
 + AMV.
 + MXF.
 + Picasa MXF.
 + ROQ.
 + NSV.
+
+## Windows Registry
+
++ REG.
++ SUD.
 
 ## GIF
 
