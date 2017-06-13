@@ -91,6 +91,8 @@
 ## SQLite
 
 + SQLite.
++ WTBDB
++ QRDB
 
 ## vCard
 
@@ -167,3 +169,13 @@
 + 3D.
 + 3DM.
 + 3DXML.
+
+## Apple
+
++ PLIST.
++ CAR.
++ NIB.
++ DYLIB.
++ SINF.
++ SUPF.
++ SUPP.
