@@ -33,7 +33,7 @@ rule apple_bom: CAR
 rule apple_nib: NIB
 {
     meta:
-	author: "Joan Bono"
+	author = "Joan Bono"
 
     strings:
 	$a = { 4e 49 42 41 72 63 68 69 76 65 01 }
@@ -45,7 +45,7 @@ rule apple_nib: NIB
 rule apple_dylib: DYLIB
 {
     meta:
-	author: "Joan Bono"
+	author = "Joan Bono"
 
     strings:
 	$a = { cf fa ed fe 0c 00 00 01 }
@@ -57,7 +57,7 @@ rule apple_dylib: DYLIB
 rule apple_sinf: SINF
 {
     meta:
-	author: "Joan Bono"
+	author = "Joan Bono"
 
     strings:
 	$a = { 00 00 04 20 73 69 6e 66 }
@@ -69,7 +69,7 @@ rule apple_sinf: SINF
 rule apple_supf: SUPF
 {
     meta:
-	author: "Joan Bono"
+	author = "Joan Bono"
 
     strings:
 	$a = { 03 34 30 35 00 00 07 a8 }
@@ -81,7 +81,7 @@ rule apple_supf: SUPF
 rule apple_supp: SUPP
 {
     meta:
-	author: "Joan Bono"
+	author = "Joan Bono"
 
     strings:
 	$a = { 01 34 30 35 2b 8d 5c 4c 24 18 d2 5f }
