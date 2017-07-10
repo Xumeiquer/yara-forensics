@@ -4,6 +4,7 @@
 
 * [Audio](#audio)
 * [Compressed Files](#compressed-files)
+* [Crypto Files](#crypto-files)
 * [GIF](#gif)
 * [GPS Files](#gps-files)
 * [JPEG Images](#jpeg-images)
@@ -47,6 +48,13 @@
 ## Compressed Files
 
 + 7z.
+
+## Crypto Files
+
++ DER or x509.
++ PGP Whole Disk Encryption
++ PKR Public keyring.
++ SKR Private keyring.
 
 ### GPS Files
 

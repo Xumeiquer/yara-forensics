@@ -1,9 +1,9 @@
 language: c
 sudo: required
 before_install:
-    - wget https://github.com/VirusTotal/yara/archive/v3.5.0.tar.gz -O ../yara.tar.gz
+    - wget https://github.com/VirusTotal/yara/archive/v3.6.3.tar.gz -O ../yara.tar.gz
     - tar -xzvf ../yara.tar.gz -C ..
-    - cd ../yara-3.5.0
+    - cd ../yara-3.6.3
     - ./bootstrap.sh
     - ./configure
     - make
