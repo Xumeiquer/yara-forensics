@@ -1,10 +1,10 @@
 language: c
 sudo: required
 before_install:
-    - YARAV=$(curl -L https://github.com/VirusTotal/yara/releases/latest | grep -oP "\d+\.\d+\.\d+" | head -1)
+    - YARAV=$(curl -L -s -k https://github.com/VirusTotal/yara/releases/latest | grep -oP "\d+\.\d+\.\d+" | head -1)
     - wget https://github.com/VirusTotal/yara/archive/v$(echo $YARAV).tar.gz -O ../yara.tar.gz
-    - tar -xzvf ../yara.tar.gz -C ../yara
-    - cd ../yara
+    - tar -xzvf ../yara.tar.gz -C ..
+    - cd ../yara-$(echo $YARAV)
     - ./bootstrap.sh
     - ./configure
     - make
