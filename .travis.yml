@@ -1,9 +1,10 @@
 language: c
 sudo: required
 before_install:
-    - wget https://github.com/VirusTotal/yara/archive/v3.6.3.tar.gz -O ../yara.tar.gz
-    - tar -xzvf ../yara.tar.gz -C ..
-    - cd ../yara-3.6.3
+    - YARAV=$(curl -L https://github.com/VirusTotal/yara/releases/latest | grep -oP "\d+\.\d+\.\d+" | head -1)
+    - wget https://github.com/VirusTotal/yara/archive/v$(echo $YARAV).tar.gz -O ../yara.tar.gz
+    - tar -xzvf ../yara.tar.gz -C ../yara
+    - cd ../yara
     - ./bootstrap.sh
     - ./configure
     - make
@@ -15,3 +16,5 @@ script:
     - FAIL=0
     - for i in $(ls -d */); do for j in $(find $i -type f -regex ".*\.yara?"); do echo $j; yara $j testfile; if [[ $? -ne 0 ]]; then FAIL=1; fi; done; done
     - exit $FAIL
+
+
