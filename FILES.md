@@ -48,6 +48,9 @@
 ## Compressed Files
 
 + 7z.
++ Rar.
++ Tar.
++ Gzip.
 
 ## Crypto Files
 
