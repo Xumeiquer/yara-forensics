@@ -17,6 +17,7 @@
 * [vCard](#vcard)
 * [Vector](#vector)
 * [Video](#video)
+* [VmWare](#VmWare)
 * [Windows Registry](#windows-registry)
 
 ## Audio
@@ -190,3 +191,12 @@
 + SINF.
 + SUPF.
 + SUPP.
+
+## VmWare
+
++ VMDK.
++ VMEM.
++ NVRAM.
++ VMX.
++ VMXF.
++ VMSS.
