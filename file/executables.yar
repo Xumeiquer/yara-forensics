@@ -16,7 +16,7 @@ rule exe: EXE
 	$b = "!This program cannot be run in DOS mode."
 
     condition:
-       $a at 0 and $b: (@ > @a)
+       $a at 0 and for all of ($b): (@ > @a)
 }
 
 rule elf64: ELF64
@@ -30,6 +30,6 @@ rule elf64: ELF64
 	$c = "linux-x86-64"
 
     condition:
-       $a at 0 and ($b or $c): (@ > @a)
+       $a at 0 and ($b or $c)
 }
 
