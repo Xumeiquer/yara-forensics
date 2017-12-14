@@ -16,21 +16,7 @@ rule exe: EXE
 	$b = "!This program cannot be run in DOS mode."
 
     condition:
-       $a at 0 and $b
-}
-
-//test
-
-rule elf32: ELF32
-{
-    meta:
-        author = "Joan Bono"
-
-    strings:
-        $a = { 62 70 6c 69 73 74 30 30 }
-
-    condition:
-       $a at 0
+       $a at 0 and $b: (@ > @a)
 }
 
 rule elf64: ELF64
@@ -39,22 +25,11 @@ rule elf64: ELF64
         author = "Joan Bono"
 
     strings:
-        $a = { 62 70 6c 69 73 74 30 30 }
+        $a = { 7F 45 4C 46 }
+	$b = "linux_amd64"
+	$c = "linux-x86-64"
 
     condition:
-       $a at 0
+       $a at 0 and ($b or $c): (@ > @a)
 }
-
-rule macho: MACHO
-{
-    meta:
-        author = "Joan Bono"
-
-    strings:
-        $a = { 62 70 6c 69 73 74 30 30 }
-
-    condition:
-       $a at 0
-}
-
 
