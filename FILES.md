@@ -200,3 +200,8 @@
 + VMX.
 + VMXF.
 + VMSS.
+
+## Executables
+
++ MZ
++ ELF32
