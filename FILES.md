@@ -14,6 +14,7 @@
 * [PNG Images](#png-images)
 * [Skype](#skype)
 * [SQLite](#sqlite)
+* [Telegram](#telegram)
 * [vCard](#vcard)
 * [Vector](#vector)
 * [Video](#video)
@@ -105,6 +106,10 @@
 + SQLite.
 + WTBDB
 + QRDB
+
+## Telegram
++ TDF.
++ TDEF.
 
 ## vCard
 
