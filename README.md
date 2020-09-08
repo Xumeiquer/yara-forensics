@@ -116,3 +116,5 @@ contains_jpeg_2000 mem.raw
 
 44,60s user 12,84s system 57% cpu 1:39,83 total
 ```
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M625UW0)
+
